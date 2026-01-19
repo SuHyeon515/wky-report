@@ -1,5 +1,4 @@
 flask==3.0.3 
-python-3.11.9
 flask-cors==4.0.1
 python-dotenv==1.0.1
 psycopg[binary]==3.2.13

@@ -272,7 +272,7 @@ export default function ReportsPage() {
                             <Cell key={i} fill={PIE_COLORS[i % PIE_COLORS.length]} />
                           ))}
                         </Pie>
-                        <Tooltip formatter={(v: number) => formatCurrency(v)} />
+                        <Tooltip formatter={(value) => formatCurrency(Number(value ?? 0))} />
                       </PieChart>
                     </ResponsiveContainer>
                   </div>

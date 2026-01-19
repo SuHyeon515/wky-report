@@ -1,9 +1,10 @@
-flask==3.0.3
+flask==3.0.3 
+python-3.11.9
 flask-cors==4.0.1
 python-dotenv==1.0.1
 psycopg[binary]==3.2.13
 pandas==2.2.2
-numpy==2.0.1
+numpy==1.26.4
 openpyxl==3.1.5
 xlsx2csv==0.8.2
 xlrd==2.0.1

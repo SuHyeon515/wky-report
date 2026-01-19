@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* =====================
+   White Base + Accent
+===================== */
+:root {
+  /* Background */
+  --bg-main: #ffffff;
+  --bg-card: #ffffff;
+
+  /* Text */
+  --fg-main: #111111;
+  --fg-muted: #6b7280;
+
+  /* Accent */
+  --accent-blue: #2563eb;   /* 버튼 / 링크 */
+  --accent-green: #16a34a;  /* 수입 */
+  --accent-red: #dc2626;    /* 지출 */
+
+  /* UI */
+  --border-soft: #e5e7eb;
+  --bg-soft: #f9fafb;
+}
+
+/* =====================
+   Base
+===================== */
+body {
+  background: var(--bg-main);
+  color: var(--fg-main);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    sans-serif;
+}

@@ -25,7 +25,11 @@ CORS(app, supports_credentials=True, origins=CORS_ORIGIN)
 def db():
     if not DATABASE_URL:
         raise RuntimeError("DATABASE_URL missing in .env")
-    return psycopg.connect(DATABASE_URL, row_factory=dict_row)
+    return psycopg.connect(
+        DATABASE_URL,
+        row_factory=dict_row,
+        connect_timeout=10,
+    )
 
 @app.get("/health")
 def health():
